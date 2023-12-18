@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stone, Paper, Scissor Game</title>
+
+    <!-- CSS STYLESHEET -->
+    <link rel="stylesheet" href="./CSS/style.css">
+
+</head>
+<body>
+
+    <div id="wrapper">
+
+        <!-- Game Area  -->
+        <div id="game-area">
+
+            <!-- Computer  -->
+            <div id="computer">
+                <div class="name-score">
+                    <h2>Computer</h2>
+                    <div id="computer-score">Score: <span class="score">0</span></div>
+                </div>
+                <div class="option">
+                    <div class="option-col">
+                        <img src="./Images/paper-emoji.png" alt="">
+                    </div>
+                    <div class="option-col">
+                        <img src="./Images/scissor-emoji.png" alt="">
+                    </div>
+                    <div class="option-col">
+                        <img src="./Images/stone-emoji.png" alt="">
+                    </div>
+                </div>
+                <div id="computer-step" class="step"></div>
+            </div>
+
+            <!-- Player  -->
+            <div id="player">
+                <div id="player-step" class="step"></div>
+                <div class="option">
+                    <div class="option-col">
+                        <img src="./Images/paper-emoji.png" alt="">
+                    </div>
+                    <div class="option-col">
+                        <img src="./Images/scissor-emoji.png" alt="">
+                    </div>
+                    <div class="option-col">
+                        <img src="./Images/stone-emoji.png" alt="">
+                    </div>
+                </div>
+                <div class="name-score">
+                    <h2>You</h2>
+                    <div id="player-score">Score: <span class="score">0</span></div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Winner Area -->
+        <div id="winner-area">
+            <div class="win">
+                <p></p>
+                <h2></h2>
+            </div>
+            <button class="restart" onclick="window.location.reload(true)">Play Again</button>
+        </div>
+
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script src="./JS/app.js"></script>
+    
+</body>
+</html>
